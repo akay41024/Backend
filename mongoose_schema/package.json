@@ -1,0 +1,19 @@
+{
+  "name": "mongoose_schema",
+  "version": "1.0.0",
+  "description": "schema in mongoose",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Aasif khan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.3"
+  }
+}
