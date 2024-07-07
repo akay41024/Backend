@@ -6,6 +6,7 @@ const videoSchema = new mongoose.Schema({
         type: String, //cloudnary
         required: true,
     },
+    
     thumbnail: {
         type: String,
         required: true
