@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-import { LIMIT } from './constents';
+import { LIMIT } from './constents.js';
 
 
 const app = express();
@@ -20,6 +20,14 @@ app.use(express.urlencoded({extended: true, limit: LIMIT}))
 app.use(express.static("public"))
 
 app.use(cookieParser())
+
+//routes imports
+
+import userRouter from './routes/user.routes.js'
+
+//routes declaration
+
+app.use('/api/v1/users',userRouter)
 
 
 export {app}
